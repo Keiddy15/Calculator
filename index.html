@@ -3,10 +3,12 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel="icon"   href="./img/calculator-fav-icon.png" type="image/png"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>Calculator</title>
 </head>
 <body>
     <div id="wrapper">
@@ -18,37 +20,36 @@
         <main>
             <div class="calculator">
                 <div class="calculator-header">
-                    <h3>Hi. this is a calculator</h3>
+                    <h3 id="calculator-text">Hi. this is a calculator</h3>
                 </div>
                 <div class="calculator-content">
                     <div class="calculator-content-row-1">
-                        <a href="" class="calculator-content-item">C</a>
-                        <a href="" class="calculator-content-item">%</a>
-                        <a href="" class="calculator-content-item">/</a>
+                        <input type="button" value="C" class="calculator-content-item" id="C" onclick="setTextEmpty()">
+                        <input type="button" value="%" class="calculator-content-item" id="%">
+                        <input type="button" value="/" class="calculator-content-item" id="/">
                     </div>
                     <div class="calculator-content-row-2">
-                        <a href="" class="calculator-content-item">7</a>
-                        <a href="" class="calculator-content-item">8</a>
-                        <a href="" class="calculator-content-item">9</a>
-                        <a href="" class="calculator-content-item">*</a>
-
+                        <input type="button" value="7" class="calculator-content-item" id="7" onclick="ff()">
+                        <input type="button" value="8" class="calculator-content-item" id="8" onclick="ff()">
+                        <input type="button" value="9" class="calculator-content-item" id="9">
+                        <input type="button" value="*" class="calculator-content-item" id="*">
                     </div>
                     <div class="calculator-content-row-3">
-                        <a href="" class="calculator-content-item">4</a>
-                        <a href="" class="calculator-content-item">5</a>
-                        <a href="" class="calculator-content-item">6</a>
-                        <a href="" class="calculator-content-item">-</a>
+                        <input type="button" value="4" class="calculator-content-item" id="4">
+                        <input type="button" value="5" class="calculator-content-item" id="5">
+                        <input type="button" value="6" class="calculator-content-item" id="6">
+                        <input type="button" value="-" class="calculator-content-item" id="-">
                     </div>
                     <div class="calculator-content-row-4">
-                        <a href="" class="calculator-content-item">1</a>
-                        <a href="" class="calculator-content-item">2</a>
-                        <a href="" class="calculator-content-item">3</a>
-                        <a href="" class="calculator-content-item">+</a>
+                        <input type="button" value="1" class="calculator-content-item" id="1" onclick="ff()">
+                        <input type="button" value="2" class="calculator-content-item" id="2">
+                        <input type="button" value="3" class="calculator-content-item" id="3">
+                        <input type="button" value="+" class="calculator-content-item" id="+">
                     </div>
                     <div class="calculator-content-row-5">
-                        <a href="" class="calculator-content-item">0</a>
-                        <a href="" class="calculator-content-item">.</a>
-                        <a href="" class="calculator-content-item">=</a>
+                        <input type="button" value="0" class="calculator-content-item" id="0" onclick="ff()">
+                        <input type="button" value="." class="calculator-content-item" id=".">
+                        <input type="button" value="=" class="calculator-content-item" id="=">
                     </div>
                 </div>
             </div>
@@ -73,6 +74,7 @@
                 </div>
              </div>
         </footer>
- 
+    </div>
+    <script src="./main.js" type="text/javascript"></script>
 </body>
 </html>
