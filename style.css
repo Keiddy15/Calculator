@@ -38,3 +38,189 @@ body{
 .topnav .nav-icon {
     font-size: 4rem;
 }
+.footer{
+    background-color: #0A0908;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+.footer-content, .footer-icons, .footer-copyright {
+    width: 85%;
+    margin: 0 auto;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #F2F4F3;
+    padding-top: 4%;
+}
+.footer-icon-items{
+    color:#F2F4F3;
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 1.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #C1EEFF, #C1EEFF 50%, #F2F4F3 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.footer-content{
+    padding-bottom: 3%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.footer-copyright p {
+    color:#F2F4F3;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 4%;
+}
+
+.footer-content-text h1{
+    color: #C1EEFF;
+}
+.footer-content-text p {
+    color:#F2F4F3;
+    text-align: center;
+}
+.footer-content img {
+    margin-right: 4%;
+}
+main {
+    height: 40rem;
+    padding: 81px;
+    display: flex;
+    align-items: center;
+}
+.calculator {
+    width: 50%;
+    height: 85%;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 #011936, 0 6px 20px 0 #EBFCFB;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.calculator-header {
+    background-color: #EBFCFB;
+    height: 30%;
+    padding-bottom: 4%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.calculator-header h3{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.calculator-content {
+    background-color: #011936;
+    height: 70%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.calculator-content-row-1 {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    height: 25%;
+    border-bottom: 1px #EBFCFB solid;
+}
+.calculator-content-row-2, .calculator-content-row-3, .calculator-content-row-4{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 17%;
+    border-bottom: 1px #EBFCFB solid;
+}
+.calculator-content-row-5 {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    height: 25%;
+    
+}
+.calculator-content-row-1 input:first-child, .calculator-content-row-2 input:first-child, .calculator-content-row-3 input:first-child, 
+.calculator-content-row-4 input:first-child, .calculator-content-row-5 input:first-child{
+    border-left: 0px;
+}
+.calculator-content-item{
+    border-left: 1px #EBFCFB solid;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FBFFF1;
+    background-color: #011936;
+    cursor: pointer;
+}
+.calculator-content-item:active{
+    background-color: #EBFCFB;
+    color: #011936;
+    border: 0px solid #EBFCFB;
+    outline: 0px solid;
+}
+.calculator-content-items{
+    text-align: center;
+}
+@keyframes slidein {
+    from {
+      margin-top: 50%;
+      width: 50%
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 50%;
+    }
+}
+@media only screen and (max-width: 980px){
+    .calculator {
+        width: 90%;
+    }
+    main {
+        padding: 2%;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 12%;
+        padding-top: 12%;
+    }
+    .footer-content-text {
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    .footer-content img {
+        margin: 0 auto;
+    }
+    @keyframes slidein {
+        from {
+          margin-top: 90%;
+          width: 90%;
+        }
+      
+        to {
+          margin-top: 0%;
+          width: 90%;
+        }
+    }
+}

@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     <script src="/Calculator/main.js" type="text/javascript"></script>
     <meta charset="UTF-8">
@@ -11,13 +12,70 @@
     <title>calculator</title>
 </head>
 <body>
-    <header class="topnav">
-        <a href="/" class="active"><i class="fa fa-home"></i> Home</a>
-        <a href="/" class="nav-icon"><img src="/Calculator/img/calculator.png" alt=""/></a>
-        <a href="/Calculator/developer.html"><i class="fa fa-user-circle"></i> Developer</a>
-    </header>
-    <footer>
-
-    </footer>
+    <div id="wrapper">
+        <header class="topnav">
+            <a href="/" class="active"><i class="fa fa-home"></i> Home</a>
+            <a href="/" class="nav-icon"><img src="./img/calculator.png" alt=""/></a>
+            <a href="/Calculator/developer.html"><i class="fa fa-user-circle"></i> Developer</a>
+        </header>
+        <main>
+            <div class="calculator">
+                <div class="calculator-header">
+                    <h3>Hi. this is a calculator</h3>
+                </div>
+                <div class="calculator-content">
+                    <div class="calculator-content-row-1">
+                        <input type="button" value="C" class="calculator-content-item">
+                        <input type="button" value="%" class="calculator-content-item">
+                        <input type="button" value="/" class="calculator-content-item">
+                    </div>
+                    <div class="calculator-content-row-2">
+                        <input type="button" value="7" class="calculator-content-item">
+                        <input type="button" value="8" class="calculator-content-item">
+                        <input type="button" value="9" class="calculator-content-item">
+                        <input type="button" value="*" class="calculator-content-item">
+                    </div>
+                    <div class="calculator-content-row-3">
+                        <input type="button" value="4" class="calculator-content-item">
+                        <input type="button" value="5" class="calculator-content-item">
+                        <input type="button" value="6" class="calculator-content-item">
+                        <input type="button" value="-" class="calculator-content-item">
+                    </div>
+                    <div class="calculator-content-row-4">
+                        <input type="button" value="1" class="calculator-content-item">
+                        <input type="button" value="2" class="calculator-content-item">
+                        <input type="button" value="3" class="calculator-content-item">
+                        <input type="button" value="+" class="calculator-content-item">
+                    </div>
+                    <div class="calculator-content-row-5">
+                        <input type="button" value="0" class="calculator-content-item">
+                        <input type="button" value="." class="calculator-content-item">
+                        <input type="button" value="=" class="calculator-content-item">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <img src="./img/calculator-footer.png">
+                <div class="footer-content-text">
+                    <h1>Keiddy García</h1>
+                    <p>System engineering <br> Full Stack Developer</p>
+                </div>
+            </div>
+            <div>
+                <div class="footer-icons">
+                    <a href="https://twitter.com/keiddyg" target="blank_" class="footer-icon-items"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/keiddy15/" target="blank_" class="footer-icon-items"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/keiddy-garcía-9b1371185" target="blank_" class="footer-icon-items"><i class="fa fa-linkedin"></i></a>
+                    <a href="http://GitHub.com/Keiddy15" target="blank_" class="footer-icon-items" style="margin-right: 0rem;"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>©Copyright All rights reserved.</p>
+                </div>
+             </div>
+        </footer>
+    </div>
+    <script src="/main.js" type="text/javascript></script>
 </body>
 </html>gg
