@@ -164,6 +164,7 @@ main {
     height: 25%;
     border-bottom: 1px #EBFCFB solid;
 }
+<<<<<<< Updated upstream
 .calculator-content-row-2, .calculator-content-row-3, .calculator-content-row-4{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -180,6 +181,9 @@ main {
 .calculator-content-row-4 input:first-child, .calculator-content-row-5 input:first-child{
     border-left: 0px;
 }
+=======
+
+>>>>>>> Stashed changes
 .calculator-content-item{
     border-left: 1px #EBFCFB solid;
     text-decoration: none;
