@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 const calculator = document.querySelector(".calculator"); //To listen when is pressed a number
 const keys = calculator.querySelector(".calculator-content-row"); //To listen when is pressed an operator
 const display = document.querySelector("#calculator-text")
@@ -39,4 +37,3 @@ keys.addEventListener("click", e => {
     
 })
 
->>>>>>> Stashed changes
