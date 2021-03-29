@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link  rel="icon"   href="./img/calculator-fav-icon.png" type="image/png"/>
+    <link  rel="icon"   href="/img//calculator-fav-icon.png" type="image/png"/>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,36 +20,31 @@
         <main>
             <div class="calculator">
                 <div class="calculator-header">
-                    <h3 id="calculator-text">Hi. this is a calculator</h3>
+                    <h3 id="calculator-text">0</h3>
                 </div>
                 <div class="calculator-content">
-                    <div class="calculator-content-row-1">
-                        <input type="button" value="C" class="calculator-content-item" id="C" onclick="setTextEmpty()">
-                        <input type="button" value="%" class="calculator-content-item" id="%">
-                        <input type="button" value="/" class="calculator-content-item" id="/">
-                    </div>
-                    <div class="calculator-content-row-2">
-                        <input type="button" value="7" class="calculator-content-item" id="7" onclick="ff()">
-                        <input type="button" value="8" class="calculator-content-item" id="8" onclick="ff()">
-                        <input type="button" value="9" class="calculator-content-item" id="9">
-                        <input type="button" value="*" class="calculator-content-item" id="*">
-                    </div>
-                    <div class="calculator-content-row-3">
-                        <input type="button" value="4" class="calculator-content-item" id="4">
-                        <input type="button" value="5" class="calculator-content-item" id="5">
-                        <input type="button" value="6" class="calculator-content-item" id="6">
-                        <input type="button" value="-" class="calculator-content-item" id="-">
-                    </div>
-                    <div class="calculator-content-row-4">
-                        <input type="button" value="1" class="calculator-content-item" id="1" onclick="ff()">
-                        <input type="button" value="2" class="calculator-content-item" id="2">
-                        <input type="button" value="3" class="calculator-content-item" id="3">
-                        <input type="button" value="+" class="calculator-content-item" id="+">
-                    </div>
-                    <div class="calculator-content-row-5">
-                        <input type="button" value="0" class="calculator-content-item" id="0" onclick="ff()">
-                        <input type="button" value="." class="calculator-content-item" id=".">
-                        <input type="button" value="=" class="calculator-content-item" id="=">
+                    <div class="calculator-content-row">
+                        <input type="button" value="+" class="calculator-content-item operator" 
+                        data-action="+">
+                        <input type="button" value="-" class="calculator-content-item operator" 
+                        data-action="-">
+                        <input type="button" value="*" class="calculator-content-item operator" 
+                        data-action="*">
+                        <input type="button" value="/" class="calculator-content-item operator" 
+                        data-action="/">
+                        <input type="button" value="7" class="calculator-content-item">
+                        <input type="button" value="8" class="calculator-content-item">
+                        <input type="button" value="9" class="calculator-content-item">
+                        <input type="button" value="4" class="calculator-content-item">
+                        <input type="button" value="5" class="calculator-content-item">
+                        <input type="button" value="6" class="calculator-content-item">
+                        <input type="button" value="1" class="calculator-content-item">
+                        <input type="button" value="2" class="calculator-content-item">
+                        <input type="button" value="3" class="calculator-content-item">
+                        <input type="button" value="0" class="calculator-content-item" style="border-bottom-left-radius: 30px;">
+                        <input type="button" value="." class="calculator-content-item" data-action="decimal">
+                        <input type="button" value="C" class="calculator-content-item" data-action="clear">
+                        <input type="button" value="=" class="calculator-content-item equals" data-action="calculate" style="border-bottom-right-radius: 30px;">
                     </div>
                 </div>
             </div>
