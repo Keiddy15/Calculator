@@ -200,6 +200,18 @@ main {
     }
 }
 @media only screen and (max-width: 980px){
+    main>.tecnologies-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .tecnologies-container>.technologies {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    main>.tecnologies-title h2 {
+        font-size: 2rem;
+    }
     .calculator {
         width: 90%;
     }
@@ -229,5 +241,57 @@ main {
           margin-top: 0%;
           width: 90%;
         }
+    }
+}
+.technologies {
+    border: 1px solid;
+    border-radius: 25px;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+.tecnologies-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+}
+.technologies>.content{
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 18%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tecnologies-title {
+    padding-bottom: 3%;
+}
+.tecnologies-title h2{
+    font-size: 4rem;
+    color: #183059;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #ffffffbf;
+    animation: typerwrite 3s steps(26, end), cursor 500ms steps(26) infinite normal;
+}
+@keyframes cursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+@keyframes typerwrite {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
